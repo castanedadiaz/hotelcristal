@@ -74,6 +74,12 @@ body {
     color: white;
 }
 
+@media only screen and (max-width: 630px) {
+.topnav h5 {
+    display: none;  
+  }
+}
+
 .promos {
     background-color: rgb(34, 26, 26) ;
     height: 50px;
@@ -164,6 +170,13 @@ body {
     background-color: rgb(34, 26, 26);
 }
 
+@media only screen and (max-width: 630px) {
+  #carousel-section {
+    display: none;  
+  }
+}
+
+
 .carousel-container {
   display: flex;
   align-items: center;
@@ -192,7 +205,9 @@ body {
     justify-content: center;
     padding: 12px 0 12px 0;
     left: calc(50% - 19rem);
+    background-color: red;
 }
+
 
 .card {
     position: relative;
@@ -206,9 +221,13 @@ body {
     box-shadow: 0 5px 12px rgba(0, 0, 0, 0.5);
 }
 
+
+
 .card:not(:first-child) {
     margin-left: -3rem;
 }
+
+
 
 .card:hover {
     transform: translateY(-1rem);
@@ -216,9 +235,14 @@ body {
     cursor: pointer;
 }
 
+
+
+
 .card:hover ~ .card {
     left: 2rem;
 }
+
+
 
 .card img {
     height: 10rem;
@@ -226,6 +250,64 @@ body {
     border-radius: 0.25rem;
 }
 
+
+.card img:not(:hover){
+  filter: drop-shadow(1px 1px 9px white) invert(20%);
+  filter: blur(2px);
+}
+
+@media only screen and (max-width: 710px) {
+
+  .gallery {
+    display: block;
+    left: calc(100% - 1rem);
+    padding-left:50px ;
+  }
+  .card{
+    align-items: left;
+    position: static;
+    width: 7.5rem;
+    height: 10rem;
+    background: none;
+    border-radius: 0.5rem;
+    transition: 1s ease-in-out;
+    overflow: hidden;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.5);
+  }
+
+  .card:not(:first-child) {
+    margin-left: none;
+}
+
+
+
+.card:hover {
+    transform: none;
+    font-weight: none;
+    cursor: pointer;
+}
+
+
+
+
+.card:hover ~ .card {
+    left: none;
+}
+
+
+
+.card img {
+    height: none;
+    object-fit: cover;
+    border-radius: none;
+}
+
+
+.card img:not(:hover){
+  filter: grayscale(70%);
+}
+
+}
 
   .imagen-ampliada {
     display: none;
