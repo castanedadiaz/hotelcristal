@@ -205,7 +205,6 @@ body {
     justify-content: center;
     padding: 12px 0 12px 0;
     left: calc(50% - 19rem);
-    background-color: red;
 }
 
 
@@ -256,7 +255,7 @@ body {
   filter: blur(2px);
 }
 
-@media only screen and (max-width: 710px) {
+/* @media only screen and (max-width: 710px) {
 
   .gallery {
     display: block;
@@ -307,7 +306,7 @@ body {
   filter: grayscale(70%);
 }
 
-}
+} */
 
   .imagen-ampliada {
     display: none;
