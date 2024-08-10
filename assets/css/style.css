@@ -556,18 +556,50 @@ button {
 }
 }
 
+.botones-total {
+  background-color: antiquewhite;
+  display: block;
 
 
+}
 
-/* Efecto de animación constante */
+.botones-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: red;
+  height: 200px;
+  width: 400px;
+}
+
+.cool-button {
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 15px 30px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  outline: none;
+}
+
+.cool-button:hover {
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+}
+
+.cool-button:focus {
+  outline: none;
+}
+
 @keyframes pulse {
   0% {
       transform: scale(1);
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 4px 8px rgba(219, 39, 39, 0.2);
   }
   50% {
       transform: scale(1.05);
-      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+      box-shadow: 0 6px 12px rgba(122, 107, 17, 0.3);
   }
   100% {
       transform: scale(1);
@@ -578,3 +610,18 @@ button {
 .cool-button {
   animation: pulse 2s infinite;
 }
+
+
+/* @keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+button {
+  animation: float 2s ease-in-out infinite;
+} */
+
+
+
+
