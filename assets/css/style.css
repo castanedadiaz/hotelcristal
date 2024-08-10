@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    min-width: 400px;
+    min-width: 100%;
     font-family: "Julius Sans One", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -9,6 +9,19 @@ body {
     background-color:rgb(34, 26, 26) ;
 }
 
+.reservaspag {
+  background-color: rgb(34, 26, 26);
+}
+
+.formreservas {
+  background-color: rgb(34, 26, 26);
+  padding-top: 23px;
+  padding-bottom: 24px;
+}
+
+a {
+  text-decoration: none;
+}
 
 .primer-div {
     background-color: rgb(34, 26, 26) ;
@@ -255,6 +268,12 @@ body {
   filter: blur(2px);
 }
 
+@media only screen and (max-width: 630px) {
+  #fotoshabs {
+    display: none;  
+  }
+}
+
 /* @media only screen and (max-width: 710px) {
 
   .gallery {
@@ -378,6 +397,7 @@ body {
 }
 
 .accordion {
+  width: 95%;
   max-width: 600px;
   margin: 0 auto;
  display: flex;
@@ -425,4 +445,136 @@ body {
 .accordion-item.active .accordion-content {
   display: block;
   text-align: center;
+}
+
+
+.carousel2 {
+  position: relative;
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+  border: solid white 1px;
+  border-radius: 18px;
+}
+.carousel2-container {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  align-items: center;
+    position: relative;
+    width: 600PX;
+    height: 400px;
+    margin: 0 auto;
+}
+.carousel2-item {
+  min-width: 100%;
+}
+.carousel2 img {
+  width: 100%;
+  display: block;
+}
+
+button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+#carousel-section2{
+  padding: 18px;
+  background-color: rgb(34, 26, 26);
+  display: none;
+}
+
+@media only screen and (max-width: 630px) {
+#carousel-section2 {
+  display: block;  
+}
+}
+
+.carousel3 {
+  position: relative;
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+  border: solid white 1px;
+  border-radius: 18px;
+}
+.carousel3-container {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  align-items: center;
+    position: relative;
+    width: 600PX;
+    height: 400px;
+    margin: 0 auto;
+}
+.carousel3-item {
+  min-width: 100%;
+}
+.carousel3 img {
+  width: 100%;
+  display: block;
+}
+
+
+#carousel-section3{
+  padding: 18px;
+  background-color: rgb(34, 26, 26);
+  display: none;
+}
+
+#direccion-inicio {
+  display: none;
+}
+
+@media only screen and (max-width: 630px) {
+#carousel-section3 {
+  display: block;  
+}#sitio-construccion {
+  display: none;  
+}
+#direccion-inicio {
+  display: block;  
+  font-size: 22px;
+}
+#renovando {
+  font-size: 14px;
+}
+}
+
+
+
+
+/* Efecto de animación constante */
+@keyframes pulse {
+  0% {
+      transform: scale(1);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  50% {
+      transform: scale(1.05);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  }
+  100% {
+      transform: scale(1);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.cool-button {
+  animation: pulse 2s infinite;
 }
