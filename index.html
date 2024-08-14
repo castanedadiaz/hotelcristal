@@ -40,15 +40,61 @@
   </div>
   <section class="botones-inicio">
     <div class="parent">
-      <div class="div1"> 
-            <button class="cool-button" id="cool-button2">MAPA</button>
-      </div>
-      <div class="div2">
-            <button class="cool-button">SOBRE NOSOTROS</button>
-      </div>
-      <div class="div3">  
-            <button class="cool-button" id="cool-button2">SERVICIOS</button>
-      </div>
+        <div class="div1"> 
+            <button class="cool-button" data-modal="modal1" id="cool-button2">MAPA</button>
+            <div id="modal1" class="modal">
+                <div class="modal-content">
+                    <span class="close" data-close="modal1">&times;</span>
+                    <h2>Mapa interactivo</h2>
+                    <p>Te invitamos a visitar nuestro mapa interactivo en el que encontrarás los puntos de interés cercanos al HOTEL y la forma más fácil de llegar a ellos.</p>
+                    <a href="http://www.cristalpalace.com/mapa_interactivo.html" class="btn-action" target="_blank">Ir al Mapa</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="div2">
+            <button class="cool-button" data-modal="modal2">SOBRE NOSOTROS</button>
+            <div id="modal2" class="modal">
+                <div class="modal-content">
+                    <span class="close" data-close="modal2">&times;</span>
+                    <h2>Cristal Palace Hotel</h2>
+                    <p>Bienvenido al Cristal Palace Hotel, ubicado en el vibrante Barrio de Belgrano, uno de los centros comerciales más importantes de Buenos Aires. Disfrute de la rica cultura y gastronomía local, con tiendas, restaurantes y cafés a pocos pasos.</p>
+
+                    <p>Estamos cerca de la Avenida Cabildo y del subte, facilitando el acceso a toda la ciudad, así como de centros médicos clave. En Cristal Palace, encontrará confort, cordialidad y la mejor atención desde su llegada.</p>
+
+                    <p>Nuestro hotel ofrece salones versátiles para eventos, con capacidad para 10 a 120 personas y servicio de catering personalizado.</p>
+
+                    <p>Para negocios o placer, Cristal Palace es su refugio acogedor en el corazón de Buenos Aires.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="div3">  
+            <button class="cool-button" data-modal="modal3" id="cool-button2">SERVICIOS</button>
+            <div id="modal3" class="modal">
+                <div class="modal-content">
+                    <span class="close" data-close="modal3">&times;</span>
+                    <h2>Servicios del Hotel</h2>
+<p>Disfrute de una variedad de servicios sin cargo adicional durante su estadía en el hotel:</p>
+
+<ul>
+    <li>Wi-Fi disponible en todo el hotel.</li>
+    <li>Estacionamiento cubierto sin cargo (sujeto a disponibilidad al momento de reservar).</li>
+    <li>Caja de seguridad digital en su habitación.</li>
+    <li>Aire acondicionado para su comodidad.</li>
+    <li>Servicio de guarda equipaje.</li>
+    <li>Televisión HD de 43 y 32 pulgadas, según la categoría de habitación.</li>
+    <li>Cerradura magnética para mayor seguridad.</li>
+    <li>Cunas disponibles bajo petición (sujeto a disponibilidad).</li>
+    <li>Frigobar en la habitación.</li>
+    <li>Secadores de pelo y planchas a su disposición.</li>
+</ul>
+
+<p><strong>Check-In:</strong> 14:00 h | <strong>Check-Out:</strong> 10:00 h</p>
+
+                </div>
+            </div>
+        </div>
     </div>
   </section>
     <section>
@@ -460,6 +506,7 @@
 
     </div>
 
+<script src="assets/js/modal.js"></script>
 <script src="assets/js/carusel2.js"></script>
 <script src="assets/js/carusel3.js"></script>
 <script src="assets/js/imagenup.js"></script>

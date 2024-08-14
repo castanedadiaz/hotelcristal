@@ -6,15 +6,22 @@ body {
     font-style: normal;
     box-sizing: border-box;
     color-scheme: light;
-    background-color:rgb(34, 26, 26) ;
+    --light: hsl(220, 50%, 90%);
+    --primary: hsl(255, 30%, 55%);
+    --focus: hsl(210, 90%, 50%);
+    --border-color: hsla(0, 0%, 100%, .2);
+    --global-background: hsl(220, 25%, 10%);
+    --background: linear-gradient(to right, hsl(210, 30%, 20%), hsl(255, 30%, 25%));
+    --shadow-1: hsla(236, 50%, 50%, .3);
+    --shadow-2: hsla(236, 50%, 50%, .4);
+    color: var(--light);
+    background: var(--global-background);
 }
 
 .reservaspag {
-  background-color: rgb(34, 26, 26);
 }
 
 .formreservas {
-  background-color: rgb(34, 26, 26);
   padding-top: 23px;
   padding-bottom: 24px;
 }
@@ -24,7 +31,6 @@ a {
 }
 
 .primer-div {
-    background-color: rgb(34, 26, 26) ;
     height: 350px;
     background-position: center;
     background-repeat: no-repeat;
@@ -42,7 +48,6 @@ a {
   }
 
 .topnav {
-  background-color: rgb(34, 26, 26);
   overflow: hidden;
   width: 100%;
   /* display: flex; */
@@ -63,13 +68,13 @@ a {
 
 /* Change the color of links on hover */
 .topnav a:hover {
-  background-color: #8f3e3e;
+  background-color: #ffffff;
   color: black;
 }
 
 /* Add a color to the active/current link */
 .topnav a.active {
-  background-color: #b85454;
+  background-color: hsla(236, 50%, 50%, .3);
   color: white;
 }
 
@@ -94,7 +99,6 @@ a {
 }
 
 .promos {
-    background-color: rgb(34, 26, 26) ;
     height: 50px;
     background-position: center;
     background-repeat: no-repeat;
@@ -102,7 +106,6 @@ a {
     position: relative;}
 
     .promos2 {
-      background-color: rgb(34, 26, 26) ;
       padding: 15px;
       height: 50px;
       background-position: center;
@@ -140,7 +143,6 @@ a {
 
 .promo-section{
     padding: 35px;
-    background-color: rgb(34, 26, 26);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -180,7 +182,6 @@ a {
 
 #carousel-section{
     padding: 18px;
-    background-color: rgb(34, 26, 26);
 }
 
 @media only screen and (max-width: 630px) {
@@ -213,7 +214,6 @@ a {
   }
 
   .gallery {
-    background-color: rgb(34, 26, 26);
     display: flex;
     justify-content: center;
     padding: 12px 0 12px 0;
@@ -365,14 +365,15 @@ a {
 
   #prevBtn {
     left: 10px;
+    z-index: 0;
   }
   
   #nextBtn {
     right: 10px;
+    z-index: 0;
   }
 
   .footer {
-    background-color:rgb(34, 26, 26); /* Dark background color */
     color: #fff; /* Text color */
     padding: 20px;
     text-align: center;
@@ -410,12 +411,12 @@ a {
   background-color: rgb(255, 255, 255);
   margin-bottom: 10px;
   border-radius: 5px;
+  border:  solid 1px #5dbaf0;
   overflow: hidden;
-  box-shadow: 0 .5px 1px rgb(219, 218, 218); /* Adding box shadow */
+  box-shadow: 0 .5px 1px #5dbaf0; /* Adding box shadow */
 }
 
 .accordion-header {
-  background-color: rgb(34, 28, 28);
   padding: 10px;
   cursor: pointer;
 }
@@ -432,7 +433,7 @@ a {
   font-size: 1.2em;
   margin: 0;
   flex: 1;
-  color: rgb(255, 255, 255);
+  color: #031f30;
   font-weight: bold;
   text-align: center;
 }
@@ -469,7 +470,8 @@ a {
   min-width: 100%;
 }
 .carousel2 img {
-  width: 100%;
+  width: 330px;
+  height: 400px;
   display: block;
 }
 
@@ -495,7 +497,6 @@ button {
 
 #carousel-section2{
   padding: 18px;
-  background-color: rgb(34, 26, 26);
   display: none;
 }
 
@@ -526,14 +527,14 @@ button {
   min-width: 100%;
 }
 .carousel3 img {
-  width: 100%;
+  width: 330px;
+  height: 400px;
   display: block;
 }
 
 
 #carousel-section3{
   padding: 18px;
-  background-color: rgb(34, 26, 26);
   display: none;
 }
 
@@ -587,17 +588,16 @@ button {
   overflow: hidden;
   transition: color 0.4s ease;
   border-radius: 32px 8px 32px 8px ;
-  background: linear-gradient(370deg, #3a424d5e, #221A1A, #527c7e2d);
+  background: linear-gradient(370deg, #f6f7f85e, hsl(210, 30%, 20%), #eeebeb2d);
   background-size: 400% 400%;
   animation: gradientAnimation 5s ease infinite;
 }
 
 
 .cool-button:hover {
-transform: translateY(-29px) rotate(2deg); /* Movimiento hacia arriba y ligera rotación */
-box-shadow: 0 10px 20px rgba(255, 197, 197, 0.3); /* Sombra expandida */
-color: #b29c1f; /* Cambia el color del texto */
-border-radius: 32px 20px 4px 8px ;
+transform: translateY(-29px) rotate(0); /* Movimiento hacia arriba y ligera rotación */
+box-shadow: 0 3px 6px #5dbaf0; /* Sombra expandida */
+color: #5dbaf0; /* Cambia el color del texto */
 }
 
 .cool-button:focus {
@@ -638,7 +638,7 @@ outline: none;
         text-transform: uppercase;
         text-align: center;
         color: #ffffff;
-        background: linear-gradient(45deg, #152d51, #48a5de);
+        background: linear-gradient(370deg, #f6f7f85e, hsl(210, 30%, 20%), #eeebeb2d);
         border: none;
         border-radius: 32px 8px 32px 8px ;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
@@ -646,6 +646,7 @@ outline: none;
         position: relative;
         overflow: hidden;
         transition: background 0.3s ease, transform 0.3s ease;
+        z-index: 0;
     }
 
     #cool-button2 {
@@ -656,7 +657,7 @@ outline: none;
       text-transform: uppercase;
       text-align: center;
       color: #ffffff;
-      background: linear-gradient(45deg, #152d51, #48a5de);
+      background: linear-gradient(370deg, #f6f7f85e, hsl(210, 30%, 20%), #eeebeb2d);
       border: none;
       border-radius:12px ;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
@@ -664,13 +665,125 @@ outline: none;
       position: relative;
       overflow: hidden;
       transition: background 0.3s ease, transform 0.3s ease;
+      z-index: 0;
   }
     }
+    
 
-
-
-
-
+    .modal {
+      display: none; /* Por defecto no se muestra */
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 10;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background: hsla(0, 0%, 40%, .6); /* Fondo semitransparente */
+  }
+  
+  /* Mostrar el modal cuando el contenedor es el objetivo del ancla */
+  .modal:target {
+      display: flex;
+  }
+  
+  /* El contenido del modal */
+  .modal-content {
+      position: relative;
+      margin: 5% auto; /* Ajustado para ser más centrado en móviles */
+      padding: 2rem; /* Ajustado para reducir el padding en móviles */
+      max-width: 90%; /* Ajuste de ancho máximo */
+      width: 60rem; /* Ancho en pantallas grandes */
+      border-radius: .8rem; 
+      color: var(--light);
+      background: var(--background);
+      box-shadow: var(--m-shadow, .4rem .4rem 10.2rem .2rem) var(--shadow-1);
+      overflow: hidden;
+      box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+  }
+  
+  /* Estilos para el título */
+  .modal-content h2 {
+      font-size: 2rem; /* Ajustado para pantallas más pequeñas */
+      margin-bottom: 1rem;
+  }
+  
+  /* Estilos para el texto */
+  .modal-content p {
+      padding: 0;
+      margin-top: 2rem;
+      font-size: 1rem; /* Ajustado para pantallas más pequeñas */
+      line-height: 1.6;
+  }
+  
+  /* El botón de cerrar */
+  .close {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      background: transparent;
+      border: none;
+      font-size: 2rem; /* Ajustado para pantallas más pequeñas */
+      color: var(--light);
+      cursor: pointer;
+      transition: color 0.2s;
+  }
+  
+  .close:hover,
+  .close:focus {
+      color: black;
+      text-decoration: none;
+  }
+  
+  /* Estilo para el botón de acción */
+  .btn-action {
+      display: block; /* Asegura que el botón se muestre en una línea */
+      width: auto; /* Ajustado para el contenido del botón */
+      margin: 2rem auto; /* Centrado en la pantalla y margen superior */
+      padding: 1rem 2rem; /* Ajustado para ser más cómodo en móviles */
+      border: 1px solid var(--border-color);
+      border-radius: 100rem;
+      color: inherit;
+      background: transparent;
+      font-size: 1rem; /* Ajustado para pantallas más pequeñas */
+      font-family: inherit;
+      letter-spacing: .1rem;
+      text-align: center; /* Centra el texto */
+      transition: .2s;
+      cursor: pointer;
+  }
+  
+  .btn-action:hover {
+      background: var(--focus);
+      border-color: var(--focus);
+      transform: translateY(-.2rem);
+  }
+  
+  /* Media Queries para dispositivos móviles */
+  @media (max-width: 768px) {
+      .modal-content {
+          width: 90%; /* Asegura que el modal sea más pequeño en pantallas móviles */
+          padding: 1.5rem; /* Reduce el padding en pantallas más pequeñas */
+      }
+      
+      .modal-content h2 {
+          font-size: 1.8rem; /* Reduce el tamaño del título en pantallas más pequeñas */
+      }
+      
+      .modal-content p {
+          font-size: 0.9rem; /* Reduce el tamaño del texto en pantallas más pequeñas */
+      }
+  
+      .close {
+          font-size: 1.5rem; /* Reduce el tamaño del botón de cerrar en pantallas más pequeñas */
+      }
+      
+      .btn-action {
+          padding: 0.8rem 1.6rem; /* Ajusta el padding del botón en pantallas más pequeñas */
+      }
+  }
 
 /* @keyframes float {
   0% { transform: translateY(0); }
