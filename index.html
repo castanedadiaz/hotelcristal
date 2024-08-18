@@ -20,9 +20,9 @@
 <header>
     <div class="topnav">
         <a class="active" href="#home">Home</a>
-        <!-- <a href="#news">News</a> -->
+        <!-- <a href="#news">News</a>
         <a href="#contact">Contact</a>
-        <!-- <a href="#about">About</a> -->
+        <a href="#about">About</a> -->
         <h5>Buenos aires - argentina</h5>
       </div>
 </header>
@@ -39,58 +39,19 @@
         </div>
   </div>
   <br>
-  <br>
   <section class="botones-inicio">
     <div class="parent">
-        <div class="div1"> 
-            <button class="cool-button" data-modal="modal1" id="cool-button2">MAPA</button>
-            <div id="modal1" class="modal">
-                <div class="modal-content">
-                    <span class="close" data-close="modal1">&times;</span>
-                    
-                    <div class="logo-hotel">
-                        <img src="assets/img/logo.png" alt="Hotel Cristal Palace" >
-                      </div>
-                      <h2></h2>
-                    <p>Te invitamos a visitar nuestro mapa interactivo en el que encontrarás los puntos de interés cercanos al HOTEL y la forma más fácil de llegar a ellos.</p>
-                    <a href="http://www.cristalpalace.com/mapa_interactivo.html" class="btn-action" target="_blank">Ir al Mapa</a>
-                </div>
-            </div>
-        </div>
-        
-        <div class="div2">
-            <button class="cool-button" data-modal="modal2">SOBRE NOSOTROS</button>
-            <div id="modal2" class="modal">
-                <div class="modal-content">
-                    <span class="close" data-close="modal2">&times;</span>
-                    <div class="modal-content-inner">
-                        <h2></h2>
-                        <div class="logo-hotel">
-                            <img src="assets/img/logo.png" alt="Hotel Cristal Palace" >
-                          </div>
-                        <p>Bienvenido al Cristal Palace Hotel, ubicado en el vibrante Barrio de Belgrano, uno de los centros comerciales más importantes de Buenos Aires. Disfrute de la rica cultura y gastronomía local, con tiendas, restaurantes y cafés a pocos pasos.</p>
-        
-                        <p>Estamos cerca de la Avenida Cabildo y del subte, facilitando el acceso a toda la ciudad, así como de centros médicos clave. En Cristal Palace, encontrará confort, cordialidad y la mejor atención desde su llegada.</p>
-        
-                        <p>Nuestro hotel ofrece salones versátiles para eventos, con capacidad para 10 a 120 personas y servicio de catering personalizado.</p>
-        
-                        <p>Para negocios o placer, Cristal Palace es su refugio acogedor en el corazón de Buenos Aires.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
+        <!-- Div para el botón de Servicios (ahora en primer lugar) -->
         <div class="div3">  
             <button class="cool-button" data-modal="modal3" id="cool-button2">SERVICIOS</button>
             <div id="modal3" class="modal">
                 <div class="modal-content">
                     <span class="close" data-close="modal3">&times;</span>
                     <div class="modal-content-inner">
-                        
                         <div class="logo-hotel">
-                            <img src="assets/img/logo.png" alt="Hotel Cristal Palace" >
-                          </div>
-                          <h2>Servicios del Hotel</h2>
+                            <img src="assets/img/logo.png" alt="Hotel Cristal Palace">
+                        </div>
+                        <h2>Servicios del Hotel</h2>
                         <p>Disfrute de una variedad de servicios sin cargo adicional durante su estadía en el hotel:</p>
                         <ul>
                             <li>Wi-Fi disponible en todo el hotel.</li>
@@ -109,31 +70,112 @@
                 </div>
             </div>
         </div>
+
+        <!-- Div para el botón de Sobre Nosotros (ahora en segundo lugar) -->
+        <div class="div2">
+            <button class="cool-button" data-modal="modal2">SOBRE NOSOTROS</button>
+            <div id="modal2" class="modal">
+                <div class="modal-content">
+                    <span class="close" data-close="modal2">&times;</span>
+                    <div class="modal-content-inner">
+                        <h2></h2>
+                        <div class="logo-hotel">
+                            <img src="assets/img/logo.png" alt="Hotel Cristal Palace">
+                        </div>
+                        <p>Bienvenido al Cristal Palace Hotel, ubicado en el vibrante Barrio de Belgrano, uno de los centros comerciales más importantes de Buenos Aires. Disfrute de la rica cultura y gastronomía local, con tiendas, restaurantes y cafés a pocos pasos.</p>
+                        <p>Estamos cerca de la Avenida Cabildo y del subte, facilitando el acceso a toda la ciudad, así como de centros médicos clave. En Cristal Palace, encontrará confort, cordialidad y la mejor atención desde su llegada.</p>
+                        <p>Nuestro hotel ofrece salones versátiles para eventos, con capacidad para 10 a 120 personas y servicio de catering personalizado.</p>
+                        <p>Para negocios o placer, Cristal Palace es su refugio acogedor en el corazón de Buenos Aires.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Div para el botón de Mapa (ahora en último lugar) -->
+        <div class="div1"> 
+            <button class="cool-button" data-modal="modal1" id="cool-button2">MAPA</button>
+            <div id="modal1" class="modal">
+                <div class="modal-content">
+                    <span class="close" data-close="modal1">&times;</span>
+                    <div class="logo-hotel">
+                        <img src="assets/img/logo.png" alt="Hotel Cristal Palace">
+                    </div>
+                    <h2></h2>
+                    <p>Te invitamos a visitar nuestro mapa interactivo en el que encontrarás los puntos de interés cercanos al HOTEL y la forma más fácil de llegar a ellos.</p>
+                    <a href="mapa.html" class="btn-action" target="_blank">Ir al Mapa</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<br>
+<section id="carousel-section">
+    <div class="carousel-container">
+        <div class="carousel-slide">
+            <img src="assets/img/entrada.jpg" alt="habitaciones">
+            <img src="assets/img/fondo.jpg" alt="hotel belgrano">
+            <img src="assets/img/promo_2.jpg" alt="hotel cristal">
+            <img src="assets/img/promo_3.jpg" alt="hotel buenos aires">
+            <img src="assets/img/Foto Salon 150 personas aprox.jpg" alt="hotel cerca a river">
+        </div>
+        <button id="prevBtn">&#10094</button>
+        <button id="nextBtn">&#10095</button>
+    </div>
+</section>
+<br>
+  <div class="promos2">
+    <h6><strong>Eventos cercanos al</strong></h6>
+    <br>
+</div>
+  <div class="logo-hotel">
+    <img src="assets/img/logo.png" alt="Hotel Cristal Palace" >
+  </div>
+  <br>
+  <br>
+  <section>
+    <div class="event-slider-container">
+        <div class="event-slider">
+            <div class="event-slide">
+                <img src="assets/img/River_Icon.png" style="width: 70px; height: 80px;" class="event-logo">
+                <p class="event-date">21 de Agosto 2024</P>
+                <p class="event-location"><strong> Estadio Más Monumental</strong></p>
+                <p class="event-location"><strong> River Plate Vs. Talleres</strong></p>
+                <p class="event-description">Partido de vuelta por octavos de final de la Copa Libertadores. El partido en Córdoba terminó 1-0 a favor del Millonario. Si venís a la cancha somos la mejor opción. Excelente atención y cercanía. </p>
+                <p> <strong> A 12 cuadras de NUESTRO HOTEL </strong></p>
+            </div>
+            <div class="event-slide">
+                <img src="assets/img/Presentes_logo.png" alt="expopresentes" class="event-logo">
+                <p class="event-date">21 al 24 de agosto de 2024</P>
+                <p class="event-location"><strong> LA RURAL</strong></p>
+                <p class="event-description">PRESENTES es la Exposición Internacional de Decoración, Iluminación, Muebles, Mesa, Bazar, Cocina, Regalos, Utilitarios, Marroquinería, Textil para el Hogar y Navidad más grande de la República Argentina.</p>
+                <p> <strong> A 20 MINUTOS DE NUESTRO HOTEL </strong></p>
+            </div>
+            <div class="event-slide">
+                <img src="assets/img/Ibersensores_logo.png" alt="Ibersensores" class="event-logo">
+                <p class="event-date">21 al 24 de octubre de 2024</p>
+                <p class="event-location">Instituto Nacional de Tecnología Industrial -<strong> INTI</strong></p>
+                <p class="event-description">IBERSENSOR es un foro de la comunidad científica de habla hispana y portuguesa, que trabaja en áreas de desarrollo de sensores de todo tipo y sus aplicaciones.</p>
+                <p> <strong> A 20 MINUTOS DE NUESTRO HOTEL </strong></p>
+            </div>
+            <div class="event-slide">
+                <img src="assets/img/movistararena_logo.png" alt="Movistar Arena"  class="event-logo">
+                <p class="event-date">TODO EL AÑO</P>
+                <p class="event-location"><strong> MOVISTAR ARENA</strong></p>
+                <p class="event-description">El Movistar Arena de Buenos Aires con capacidad para 15,000 personas. Destaca por su diseño contemporáneo y excelente acústica,es punto de referencia clave para conciertos  y espectáculos en la ciudad.</strong></p>
+                <p> <strong> A 20 MINUTOS DE NUESTRO HOTEL </strong></p>
+            </div>
+            <!-- Agrega más tarjetas según necesites -->
+        </div>
+        <button class="event-prev" onclick="moveEventSlide(-1)">&#10094;</button>
+        <button class="event-next" onclick="moveEventSlide(1)">&#10095;</button>
     </div>
   </section>
-  <br>
-  <br>
-  <br>
-  <br>
-    <section>
-        
+    <section>      
         <div class="promos2">
           <h5><strong>galeria</strong></h5><br>
       </div>
     </section>
-    <section id="carousel-section">
-        <div class="carousel-container">
-            <div class="carousel-slide">
-                <img src="assets/img/entrada.jpg" alt="habitaciones">
-                <img src="assets/img/fondo.jpg" alt="hotel belgrano">
-                <img src="assets/img/promo_2.jpg" alt="hotel cristal">
-                <img src="assets/img/promo_3.jpg" alt="hotel buenos aires">
-                <img src="assets/img/Foto Salon 150 personas aprox.jpg" alt="hotel cerca a river">
-            </div>
-            <button id="prevBtn">&#10094</button>
-            <button id="nextBtn">&#10095</button>
-        </div>
-    </section>
+    
     <div class="promos2">
       <h5><strong>HABITACIONES</strong></h5><br>
   </div>
@@ -409,46 +451,6 @@
             </section>    
             <br>
             <br>
-            <div class="promos2">
-                <h6><strong>Eventos cercanos al</strong></h6>
-                <br>
-            </div>
-              <div class="logo-hotel">
-                <img src="assets/img/logo.png" alt="Hotel Cristal Palace" >
-              </div>
-              <br>
-              <section>
-                <div class="event-slider-container">
-                    <div class="event-slider">
-                        <div class="event-slide">
-                            <img src="assets/img/Presentes_logo.png" style="width: 250px; height: 110px;" class="event-logo">
-                            <p class="event-date">21 al 24 de agosto de 2024</P>
-                            <p class="event-location"><strong> LA RURAL</strong></p>
-                            <p class="event-description">PRESENTES es la Exposición Internacional de Decoración, Iluminación, Muebles, Mesa, Bazar, Cocina, Regalos, Utilitarios, Marroquinería, Textil para el Hogar y Navidad más grande de la República Argentina.</p>
-                            <p> <strong> A 20 MINUTOS DE NUESTRO HOTEL </strong></p>
-                        </div>
-                        <div class="event-slide">
-                            <img src="assets/img/Ibersensores_logo.png" alt="Ibersensores" class="event-logo">
-                            <p class="event-date">21 al 24 de octubre de 2024</p>
-                            <p class="event-location">Instituto Nacional de Tecnología Industrial -<strong> INTI</strong></p>
-                            <p class="event-description">IBERSENSOR es un foro de la comunidad científica de habla hispana y portuguesa, que trabaja en áreas de desarrollo de sensores de todo tipo y sus aplicaciones.</p>
-                            <p> <strong> A 20 MINUTOS DE NUESTRO HOTEL </strong></p>
-                        </div>
-                        <div class="event-slide">
-                            <img src="assets/img/movistararena_logo.png" alt="Movistar Arena"  class="event-logo">
-                            <p class="event-date">TODO EL AÑO</P>
-                            <p class="event-location"><strong> MOVISTAR ARENA</strong></p>
-                            <p class="event-description">El Movistar Arena de Buenos Aires con capacidad para 15,000 personas. Destaca por su diseño contemporáneo y excelente acústica,es punto de referencia clave para conciertos  y espectáculos en la ciudad.</strong></p>
-                            <p> <strong> A 20 MINUTOS DE NUESTRO HOTEL </strong></p>
-                        </div>
-                        <!-- Agrega más tarjetas según necesites -->
-                    </div>
-                    <button class="event-prev" onclick="moveEventSlide(-1)">&#10094;</button>
-                    <button class="event-next" onclick="moveEventSlide(1)">&#10095;</button>
-                </div>
-              </section>
-        <br>
-        <br>
     <section class="promos">
         <div>
             <h3><strong>PROMOCIONES</strong></h3><br>

@@ -66,14 +66,17 @@ a {
 
 /* Change the color of links on hover */
 .topnav a:hover {
-  background-color: #ffffff;
-  color: black;
+  background: none;
+  border: solid 1px #0f232ee0;
+  color: #54c0ffe0; /* Cambia el color del texto */
 }
 
 /* Add a color to the active/current link */
 .topnav a.active {
-  background-color: hsla(236, 50%, 50%, .3);
-  color: white;
+  background: none;
+  border: solid 1px #0f232ee0;
+  color: white; /* Cambia el color del texto */
+  border-radius: 0 0 12px 0;
 }
 
 .topnav h5 {
@@ -499,11 +502,13 @@ button {
 .prev {
   left: 10px;
   z-index: 0;
+  background: none;
 }
 
 .next {
   right: 10px;
   z-index: 0;
+  background: none;
 }
 
 #carousel-section2{
@@ -635,11 +640,11 @@ outline: none;
       grid-column-gap: 0px;
       grid-row-gap: 25px;
       margin-bottom: 49px;
-      }
-      
-      .div1 { grid-area: 1 / 1 / 2 / 2;}
-      .div2 { grid-area: 2 / 1 / 3 / 2; }
-      .div3 { grid-area: 3 / 1 / 4 / 2; }
+  }
+  
+  .div1 { grid-area: 3 / 1 / 4 / 2; }
+  .div2 { grid-area: 2 / 1 / 3 / 2; }
+  .div3 { grid-area: 1 / 1 / 2 / 2; }
 
       .cool-button {
         position: static;
@@ -649,7 +654,6 @@ outline: none;
         text-transform: uppercase;
         text-align: center;
         color: #ffffff;
-        background: linear-gradient(370deg, #f6f7f85e, hsl(210, 30%, 20%), #eeebeb2d);
         border: none;
         border-radius: 32px 8px 32px 8px ;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
@@ -668,7 +672,6 @@ outline: none;
       text-transform: uppercase;
       text-align: center;
       color: #ffffff;
-      background: linear-gradient(370deg, #f6f7f85e, hsl(210, 30%, 20%), #eeebeb2d);
       border: none;
       border-radius:12px ;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
@@ -831,7 +834,7 @@ outline: none;
 }
 
 .event-logo {
-    width: 150px;
+    width: 90px;
     height: auto;
     margin-bottom: 10px;
 }
@@ -870,3 +873,4 @@ outline: none;
   width: 210px;
   height: auto;
 }
+
